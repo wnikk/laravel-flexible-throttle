@@ -39,15 +39,6 @@ And edit the `config/flexible-throttle.php` file to customize the rate limiting.
 
 ## Usage
 
-Add the middleware to your `app/Http/Kernel.php` file:
-
-```php
-protected $routeMiddleware = [
-    // ...
-    'flexible.throttle' => \Wnikk\FlexibleThrottle\Middleware\FlexibleThrottle::class,
-];
-```
-
 Apply the middleware to your routes:
 
 ```php
