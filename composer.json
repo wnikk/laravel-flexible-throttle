@@ -1,0 +1,43 @@
+{
+  "name": "wnikk/laravel-flexible-throttle",
+  "version": "1.0.0",
+  "description": "A Laravel middleware for advanced throttle based on IP, session, HTTP status codes, and exceptions. This package provides flexible and customizable protection for your application against brute force, password or scanning abuse and ensures fair use.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Nikolay May",
+      "homepage": "https://nikk.dev",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/wnikk/laravel-flexible-throttle",
+  "bugs": {
+    "url": "https://github.com/wnikk/laravel-flexible-throttle/issues"
+  },
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Wnikk\\FlexibleThrottle\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wnikk\\FlexibleThrottle\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wnikk\\FlexibleThrottle\\FlexibleThrottleServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
